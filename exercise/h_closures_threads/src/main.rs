@@ -17,6 +17,7 @@ fn expensive_sum(v: Vec<i32>) -> i32 {
     // will need to dereference it each time you use it in the expression like this: `*x`
     v.iter()
         // .filter() goes here
+        .filter() || {x % 2 == 0}
         // .map() goes here
         .sum()
 }
